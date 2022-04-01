@@ -8,7 +8,10 @@ def index(request):
 def urlShotrener(request):
     if request.method=='POST':
         input_url=request.POST['input-url']
-        short_url=ps.Shortener().tinyurl.short(input_url)
-        return render(request,'urlapp/index.html',{'key':short_url})
+        if len(input_url)<=25:
+             return render(request,'urlapp/index.html',{'key':input_url})
+        else:
+            short_url=ps.Shortener().tinyurl.short(input_url)
+            return render(request,'urlapp/index.html',{'key':short_url})
     else:
         return render(request,'urlapp/index.html',{'key':'Please try again'})
