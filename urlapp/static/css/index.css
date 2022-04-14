@@ -15,7 +15,7 @@
 .url-content{
     text-align: center;
     border-radius: 20px;
-    height: 40px;
+    height: 50px;
     width: 364px;
     /* margin-right: 20px; */
     font-size: 1rem;
@@ -42,6 +42,36 @@
 }
 
 .btn-success:hover{
+    background-color: rgb(47, 98, 238);
+    cursor: pointer;
+}
+#text{
+    padding-top: .4rem;
+    text-align: center;
+    align-items: center;
+    margin-top: 2.3rem ;
+    margin-left: 1.5rem;
+    border-radius: 20px;
+    height: 3rem;
+    width: 20rem;
+    font-size: 1rem;
+    border: 3px solid rgb(54, 129, 241);
+    background-color: rgb(192, 255, 255);
+}
+
+#copy-text-btn{
+    border-radius: 21px;
+    height: 50px;
+    width:100px;
+    margin-left: 0.7rem;
+    background-color: rgb(41, 27, 122);
+    color: white;
+    font-size: 1rem;
+    border:2px solid rgb(209, 209, 250);
+    
+}
+
+#copy-text-btn:hover{
     background-color: rgb(47, 98, 238);
     cursor: pointer;
 }
